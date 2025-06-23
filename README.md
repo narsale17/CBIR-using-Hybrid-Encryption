@@ -2,7 +2,7 @@
 
 This project implements a secure, privacy-preserving image retrieval system using a **hybrid encryption** approach. It leverages **AES** for encrypting image data and **CKKS Homomorphic Encryption** for encrypted feature matching. Deep learning (ResNet-50) is used for extracting image features.
 
----
+
 
 ## Project Overview
 
@@ -12,7 +12,7 @@ This project implements a secure, privacy-preserving image retrieval system usin
   - **CKKS Homomorphic Encryption** (via [TenSEAL](https://github.com/OpenMined/TenSEAL)) for secure feature encryption.
 - **Model**: Uses a pre-trained **ResNet-50** model for extracting deep feature vectors.
 
----
+
 
 ## Project Structure
 
@@ -24,7 +24,7 @@ This project implements a secure, privacy-preserving image retrieval system usin
   - `save_path_public.pkl`: CKKS public context for encryption.
   - `save_path_secret.pkl`: CKKS secret context for decryption and retrieval.
 
----
+
 
 ## Part 1: Creating the Encrypted Image Database
 
@@ -50,7 +50,7 @@ This project implements a secure, privacy-preserving image retrieval system usin
 
 11. This process repeats for all uploaded images, completing secure storage.
 
----
+
 
 ## Part 2: Retrieving Similar Images
 
@@ -78,7 +78,7 @@ Part 2: Retrieving Similar Images Based on a Query Image. Process is as follows:
 
 11. The decrypted images are also saved to the `decrypted_images` folder, from where the user can download them.
 
----
+
 
 ## Technologies Used:
 
@@ -88,12 +88,9 @@ Part 2: Retrieving Similar Images Based on a Query Image. Process is as follows:
 - AES (from PyCryptodome) 
 - NumPy, PIL, JSON, and OS utilities
 
----
+
 
 ## Example Output
 
 - Query Image → Encrypted → Feature Extracted → Encrypted Feature
 - Matching Encrypted Features → Cosine Similarity > 80% → Mapped → Decrypted AES Images → Displayed/Saved
-
----
-
