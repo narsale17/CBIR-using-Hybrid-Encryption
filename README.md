@@ -9,7 +9,7 @@ This project implements a secure, privacy-preserving image retrieval system usin
 - **Objective**: Enable encrypted image storage and retrieval without revealing raw image data or features.
 - **Encryption**: 
   - **AES (CBC Mode)** for image encryption.
-  - **CKKS Homomorphic Encryption** (via [TenSEAL](https://github.com/OpenMined/TenSEAL)) for secure feature encryption.
+  - **CKKS Homomorphic Encryption** for secure feature encryption.
 - **Model**: Uses a pre-trained **ResNet-50** model for extracting deep feature vectors.
 
 
@@ -80,7 +80,7 @@ Part 2: Retrieving Similar Images Based on a Query Image. Process is as follows:
 
 
 
-## Technologies Used:
+## Technologies Used
 
 - Python 
 - PyTorch & TorchVision 
